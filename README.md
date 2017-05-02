@@ -3,16 +3,16 @@ SpringIOC+SpringMVC+Spring JDBC+Page+Interact Report+List+Lov
 # 标准Web开发样例项目的特点介绍：
 ## 开发亮点：所有开发的代码的自动生成！
 建好基表和对应的查询视图之后，只需要在数据库端执行：
-BEGIN
-XYG_ALD_GENSCRIPT_PKG.HANDLE_DEV_CODE(
-  'XYG_ALD_DEPT'--P_TABLE_NAME            VARCHAR2---表格名称
- ,'XYG_ALD_DEPT_V'--对应视图的名称
- ,'XYG_ALD_DEPT'--P_PKG_PRE_CODE          VARCHAR2---PKG模块的简称
- ,'DEPT'--P_TABLE_PKG_CODE        VARCHAR2---PKG用的表格的Code
- ,'DEPT_ID'--P_TABLE_ID_NAME         VARCHAR2--记录表格的ID域名，一般为：XXX_ID
-);
-END;
-即可以产生所有的基础的开发代码。根据实际需要贴到程序里面即可。
+<br>BEGIN
+<br>XYG_ALD_GENSCRIPT_PKG.HANDLE_DEV_CODE(
+<br>  'XYG_ALD_DEPT'--P_TABLE_NAME            VARCHAR2---表格名称
+<br> ,'XYG_ALD_DEPT_V'--对应视图的名称
+<br> ,'XYG_ALD_DEPT'--P_PKG_PRE_CODE          VARCHAR2---PKG模块的简称
+<br> ,'DEPT'--P_TABLE_PKG_CODE        VARCHAR2---PKG用的表格的Code
+<br> ,'DEPT_ID'--P_TABLE_ID_NAME         VARCHAR2--记录表格的ID域名，一般为：XXX_ID
+<br>);
+<br>END;
+<br>即可以产生所有的基础的开发代码。根据实际需要贴到程序里面即可。
 ## 完全整合SpringIOC和SpringMVC。
 包括相关的配置。详细看web.xml的配置以及对应的Spring的配置。
 <br>SpringIOC：/XYG_WEBDEV_SAMPLE/src/applicationContext.xml
